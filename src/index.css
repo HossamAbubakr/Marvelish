@@ -1,0 +1,538 @@
+/* =================================== */
+/*            General Style            */
+/* =================================== */
+
+html {
+  overflow: overlay;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: var(--sub-color-primary-text);
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  position: relative;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+/* =================================== */
+/*              Variables              */
+/* =================================== */
+
+:root {
+  --main-color-primary-main: #74c5d2;
+  --main-color-secondary-main: #d85d5d;
+  --sub-color-primary-text: #4b4b4b;
+  --sub-color-primary-minor: #e8e8e8;
+  --sub-color-primary-accent: #deddde;
+}
+
+/* ===================================== */
+/*             top bar Style             */
+/* ===================================== */
+
+#main-logo {
+  width: 230px;
+}
+
+.top-bar {
+  height: 55px;
+  background-color: #e6e1e6;
+  box-shadow: inset 0 -4px 6px -6px rgb(0 0 0 / 40%);
+  text-align: center;
+}
+
+/* ===================================== */
+/*            dashboard Style            */
+/* ===================================== */
+
+.hero-list .dashboard {
+  line-height: 35px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.hero-list .dashboard img {
+  margin: auto;
+  display: block;
+}
+
+#marvelish-logo{
+  width: 50%;
+}
+
+.hero-list .dashboard p {
+  margin-top: 15px;
+  color: var(--main-color-secondary-main);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 0 3px 0;
+}
+
+.hero-list .dashboard p + p {
+  font-size: 23px;
+  font-weight: 500;
+  padding: 3px 0 10px 0;
+}
+
+.hero-list .dashboard .begin-button {
+  width: 10%;
+}
+
+.hero-list .dashboard h3 {
+  margin: auto;
+  width: 60%;
+}
+
+
+/* ===================================== */
+/*            hero-list Style            */
+/* ===================================== */
+
+.hero-list {
+  margin: auto;
+  width: 630px;
+  overflow: auto;
+  border-radius: 7px;
+  background-color: var(--sub-color-primary-main);
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: 2px solid var(--sub-color-primary-accent);
+  box-shadow: 0 10px 11px -5px rgba(0, 0, 0, 0.39);
+}
+
+.hero-list p,
+label {
+  color: var(--sub-color-primary-text);
+}
+.hero-list-header {
+  background-color: var(--sub-color-primary-minor);
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.hero-list-header p {
+  color: var(--sub-color-primary-text);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 0 3px 0;
+}
+
+.hero-list-header p + p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 3px 0 10px 0;
+}
+
+#hero-list-form p + p {
+  font-weight: 600;
+  margin: 0;
+}
+
+#hero-list-form p + p + p {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#hero-list-form > .user-info {
+  width: 87%;
+}
+.hero-list-content {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-list-content > span {
+  line-height: 41px;
+  width: 70%;
+}
+
+.hero-list-content .hero-list-heading {
+  margin: 0.6rem;
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.hero-list-content .hero-list-heading {
+  color: var(--main-color-primary-main);
+}
+
+.hero-list-content img {
+  width: 150px;
+}
+
+.hero-list-content select {
+  padding: 5px;
+  border: 2px solid var(--sub-color-primary-accent);
+  border-radius: 7px;
+  height: 35px;
+  width: 90%;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--sub-color-primary-text);
+}
+
+.hero-list-content select:focus {
+  outline: 0;
+}
+
+.hero-submit-alt,
+.hero-submit {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 35px;
+  width: 90%;
+  color: var(--sub-color-primary-minor);
+}
+
+.hero-submit-alt {
+  background-color: var(--main-color-secondary-main);
+}
+
+.hero-submit-alt:hover {
+  background-color: #e08282;
+}
+
+.hero-submit-alt:active {
+  background-color: #ca6464;
+}
+
+.hero-submit{
+  background-color: var(--main-color-primary-main);
+}
+
+.hero-submit:hover{
+  background-color: #82b5e0;
+}
+
+.hero-submit:active {
+  background-color: #64b3ca;
+}
+
+.hero-submit-alt:focus,
+.hero-submit:focus{
+  outline: 0;
+}
+
+.user-info {
+  width: 90%;
+  border: 2px solid var(--sub-color-primary-accent);
+  border-radius: 7px;
+  height: 35px;
+  font-weight: 700;
+  padding-left: 7px;
+  margin: 5px 0 5px 0;
+  font-size: 15px;
+  color: #646464;
+}
+
+.user-info::placeholder {
+  color: #adadad;
+}
+
+.user-info:focus {
+  outline-color: #b8b8b8;
+}
+
+/*--Based On The Amazing Snippet By Richard Cotrina--*/
+/*---https://stackoverflow.com/a/26737044/15253212---*/
+
+#character-selector input {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+}
+
+#character-selector label {
+  background-position: center;
+}
+
+#character-selector label:nth-of-type(1) {
+  background-image: url("./assets/images/1009187.png");
+}
+
+#character-selector label:nth-of-type(2) {
+  background-image: url("./assets/images/1009220.png");
+}
+
+#character-selector label:nth-of-type(3) {
+  background-image: url("./assets/images/1009268.png");
+}
+
+#character-selector label:nth-of-type(4) {
+  background-image: url("./assets/images/1009288.png");
+}
+
+#character-selector label:nth-of-type(5) {
+  background-image: url("./assets/images/1009368.png");
+}
+
+#character-selector label:nth-of-type(6) {
+  background-image: url("./assets/images/1009610.png");
+}
+
+#character-selector label:nth-of-type(7) {
+  background-image: url("./assets/images/1009664.png");
+}
+
+#character-selector label:nth-of-type(8) {
+  background-image: url("./assets/images/1009697.png");
+}
+
+#character-selector label:nth-of-type(9) {
+  background-image: url("./assets/images/1010365.png");
+}
+
+#character-selector input:active + .user-character {
+  opacity: 0.9;
+}
+#character-selector input:checked + .user-character {
+  filter: none;
+}
+.user-character {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 115px;
+  height: 70px;
+  transition: all 100ms ease-in;
+  filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+.user-character:hover {
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+/* ===================================== */
+/*           comic-list Style            */
+/* ===================================== */
+
+.comics-list {
+  display: flex;
+  margin: auto;
+  margin-bottom: 55px;
+  width: 96%;
+}
+
+.comics-list tr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+.comic-top .comic-cover {
+  cursor: pointer;
+  margin: auto;
+  border: 1px solid gold;
+  box-shadow: 0 0 19px -4px #444444;
+}
+
+.comic {
+  margin: 0 7px 0 7px;
+}
+
+.comic-title p{
+  text-align: center;
+  cursor: default;
+  display: block;
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.comic-page-info {
+  float: left;
+  margin: 0 0 15px 20px;
+}
+
+.comic-page-nav {
+  float: right;
+  margin: 0 20px 15px 0;
+}
+
+.tip {
+  color:  var(--sub-color-primary-text);
+  text-align: center;
+  font-weight: 700;
+}
+
+#loader {
+ text-align: center;
+ margin-top: 10%;
+}
+
+#loader img{
+  width: 135px;
+ }
+
+/* =================================== */
+/*          Comic View Modal           */
+/* =================================== */
+
+.close-modal {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.comic-view-modal {
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.comic-view {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #282828;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  min-width: 30%;
+  width: fit-content;
+  max-width: 60%;
+}
+
+.comic-view .header {
+  margin: 15px 0 10px 0;
+  height: 30px;
+  text-align: center;
+}
+
+.comic-view .header h3 {
+  vertical-align: text-top;
+  text-align: center;
+  display: inline;
+}
+
+.comic-view #close-button {
+  float: left;
+  width: 25px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .comic-view {
+    padding: 0 20px 10px;
+  }
+}
+
+.comic-view-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #dedede;
+}
+
+.comic-information {
+  text-align: left;
+}
+
+.comic-information span {
+  display:table;
+  margin:0 auto;
+}
+.comic-information span p{
+  display: inline;
+  font-weight: 700;
+}
+
+.comic-view-cover {
+text-align: center;
+margin-bottom: 15px;
+}
+
+/* ===================================== */
+/*                  404                  */
+/* ===================================== */
+
+.not-found {
+  margin-top: 12vh;
+  text-align: center;
+}
+
+.not-found img {
+  margin: auto;
+  display: block;
+  width: 600px;
+}
+
+#returnHome {
+  cursor: pointer;
+  background: var(--sub-color-primary-main);
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 2rem;
+  width: 11rem;
+  color: var(--sub-color-primary-text);
+  margin-top: 20px;
+}
+
+#returnHome:hover {
+  background: var(--sub-color-primary-accent);
+}
+
+#returnHome:active {
+  background: #d2d2d2;
+}
+
+#returnHome:focus {
+  outline: 0;
+}
+
+/* =================================== */
+/*                Footer               */
+/* =================================== */
+
+.footer {
+  display: flex;
+  border-top: 1px solid #bfbfbf;
+  background-color: #e6e1e6;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer p {
+  padding-left: 15px;
+}
+
+.footer p + p {
+  font-weight: 600;
+}
+
+.footer a {
+  align-self: center;
+}
+
+.footer img {
+  padding-left: 10px;
+  height: 20px;
+}
