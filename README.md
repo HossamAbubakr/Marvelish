@@ -51,7 +51,7 @@ B. Get a detailed view of each comic's :
 
 4. Larger Cover.
 
-5. Purchase Link
+5. Purchase Link.
 
 6. Characters List
 
