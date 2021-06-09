@@ -35,7 +35,7 @@ It demonstrates my understanding of React and its components,components life cyc
 React was used for the front end.  
 Marvel API was used in getting the comics.  
 Vanila CSS/HTML was used for the UI.  
-
+Docker was used for containerization. 
 
 ## Features
 
